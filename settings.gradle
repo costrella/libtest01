@@ -1,0 +1,4 @@
+rootProject.name = "dms"
+include ':app'
+include ':mylibrary'
+include ':dms'

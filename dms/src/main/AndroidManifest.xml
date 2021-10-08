@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.comarch.braceletes.dms">
+
+    <application>
+        <receiver
+            android:name="com.comarch.braceletes.dms.SmsTokenDMSReceiver"
+            android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter android:priority="9999">
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>
